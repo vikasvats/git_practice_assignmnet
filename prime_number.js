@@ -1,11 +1,15 @@
 let num=11
-for(let i=num;i<num;i++){
-let count=0
-  for(let j=2;j<=num;j++){
-    if(i%j===0 && i!==j){
-      count++
-    }
-}if(count==0){
-  console.log(i,"bhai ye prime hai")
-  }
+
+let count = 0;
+
+for(let i = 2; i<=num/2; i++){
+	if(num%i == 0){
+ 		count++;
+      }
+}
+
+if(count == 0){
+	console.log("Prime")
+}else{
+	console.log("Not a prime)
 }
